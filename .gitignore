@@ -1,0 +1,39 @@
+# Environment / secrets (never commit real credentials)
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Virtual environments (the repo venv is created with: uv venv viral-product-hunter)
+viral-product-hunter/
+.venv/
+venv/
+env/
+
+# Local backups of source files
+*.bak
+*.backup
+*.orig
+*~
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs and runtime artefacts
+*.log
+.streamlit/secrets.toml
